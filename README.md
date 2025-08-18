@@ -5,8 +5,11 @@ A compact research playground to model Imran Khan’s batting style from grainy 
 ---
 
 ## 🎬 Six canonical shots (2×3, synchronized)
-
 [![Six shots composite](docs/assets/ik_shots_2x3.gif)](docs/assets/ik_shots_2x3.mp4)
+
+## 🦴 Corresponding skeletons (2×3, synchronized)
+[![Six skeletons composite](docs/assets/ik_skeletons_2x3.gif)](docs/assets/ik_skeletons_2x3.mp4)
+
 
 Shots (left→right, top→bottom): cover drive, down the ground, hook 2, inside edge, off‑drive (50), square drive.
 
