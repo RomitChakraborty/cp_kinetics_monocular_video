@@ -25,7 +25,7 @@ Skeletons are derived from the above six clips with a consistent fps, crop, and 
 
 ## 🔬 Physics & math (working notes)
 
-**Pose & alignment.** Let \( \mathbf{x}_j(t)\in\mathbb{R}^2 \) be the 2D keypoint for joint \( j \) at time \( t \). We Procrustes‑align sequences to remove camera pan/zoom:
+**Pose & alignment.** Let $\mathbf{x}_j(t)\in\mathbb{R}^2 $ be the 2D keypoint for joint $j$ at time $ t $. We Procrustes‑align sequences to remove camera pan/zoom:
 
 $$
 \min_{s,\mathbf{R},\mathbf{t}} \sum_{t,j}
@@ -42,14 +42,14 @@ $$
 
 Optionally smooth with a Savitzky–Golay filter before differentiating.
 
-**Bat head speed & angular velocity.** If \( \mathbf{b}(t) \) is the bat tip proxy and \( \mathbf{h}(t) \) a hand/wrist proxy,
+**Bat head speed & angular velocity.** If $ \mathbf{b}(t) $ is the bat tip proxy and $ \mathbf{h}(t) $ a hand/wrist proxy,
 
 $$
 \omega_z(t) = \frac{d}{dt}\,\arg\!\big(\mathbf{b}(t)-\mathbf{h}(t)\big),\qquad
 v_{\text{tip}}(t)=\left\lVert \dot{\mathbf{b}}(t) \right\rVert_2.
 $$
 
-**Temporal alignment (DTW).** Compare two shots \( \{\mathbf{f}_i\} \) and \( \{\mathbf{g}_j\} \):
+**Temporal alignment (DTW).** Compare two shots $\{\mathbf{f}_i\} $ and $\{\mathbf{g}_j\}$:
 
 $$
 D(i,j)=\lVert \mathbf{f}_i - \mathbf{g}_j \rVert_2^2 + \min\{D(i-1,j),\,D(i,j-1),\,D(i-1,j-1)\}, \quad D(0,0)=0,
@@ -57,7 +57,7 @@ $$
 
 yielding the correlation paths (`*_corrpath.png`).
 
-**LoRA for style.** With base weights \( \mathbf{W} \) and LoRA rank \( r \),
+**LoRA for catching batter's technique ** With base weights $\mathbf{W}$ and LoRA rank $r$,
 $$
 \mathbf{W}'=\mathbf{W}+\Delta\mathbf{W},\quad \Delta\mathbf{W}=\alpha\,\frac{1}{r}\,\mathbf{A}\mathbf{B},
 $$
