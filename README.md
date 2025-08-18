@@ -4,10 +4,10 @@ This repo implements a correlation–path analysis of batting kinetics from shor
 
 ---
 
-## Six canonical shots (2×3, synchronized)
+## Six canonical shots (2×2, synchronized)
 [![Six shots composite](docs/assets/ik_shots_2x3.gif)](docs/assets/ik_shots_2x3.mp4)
 
-## Corresponding skeletons (2×3, synchronized)
+## Corresponding skeletons (2×2, synchronized)
 [![Six skeletons composite](docs/assets/ik_skeletons_2x3.gif)](docs/assets/ik_skeletons_2x3.mp4)
 
 
