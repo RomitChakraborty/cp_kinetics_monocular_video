@@ -27,7 +27,9 @@ Skeletons are derived from the above six clips with a consistent fps, crop, and 
 
 ## Working Notes
 
-**Pose & alignment.** Let $\mathbf{x}_j(t)\in\mathbb{R}^2 $ be the 2D keypoint for joint $j$ at time $ t $. We Procrustes‑align sequences to remove camera pan/zoom:
+**Pose & alignment.** 
+
+Let $\mathbf{x}_j(t)\in\mathbb{R}^2$ be the 2D keypoint for joint $j$ at time $t$. We Procrustes‑align sequences to remove camera pan/zoom:
 
 $$
 \min_{s,\mathbf{R},\mathbf{t}} \sum_{t,j}
