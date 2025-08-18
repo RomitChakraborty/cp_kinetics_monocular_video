@@ -11,7 +11,7 @@ This repo implements a correlation–path analysis of batting kinetics from shor
 [![Six skeletons composite](docs/assets/ik_skeletons_2x3.gif)](docs/assets/ik_skeletons_2x3.mp4)
 
 
-Shots (left→right, top→bottom): cover drive, down the ground, hook, inside edge, off‑drive, square drive.
+Shots (left→right, top→bottom): hook, down the ground six, square drive, off-drive (camera placed at the back).
 Skeletons are derived from the above clips with a consistent fps, crop, and duration.
 
 ---
