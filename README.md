@@ -11,13 +11,7 @@ This repo implements a correlation–path analysis of batting kinetics from shor
 [![Six skeletons composite](docs/assets/ik_skeletons_2x3.gif)](docs/assets/ik_skeletons_2x3.mp4)
 
 
-Shots (left→right, top→bottom): cover drive, down the ground, hook 2, inside edge, off‑drive (50), square drive.
-
-> For independent tiles with Play‑All controls, open [`docs/index.html`](docs/index.html).
-
----
-
-
+Shots (left→right, top→bottom): cover drive, down the ground, hook, inside edge, off‑drive, square drive.
 Skeletons are derived from the above clips with a consistent fps, crop, and duration.
 
 ---
@@ -28,17 +22,12 @@ Skeletons are derived from the above clips with a consistent fps, crop, and dura
 
 Let $\mathbf{x}_j(t)\in\mathbb{R}^2$ be the 2D keypoint for joint $j$ at time $t$. We Procrustes‑align sequences to remove camera pan/zoom:
 
-
-
 $$
 \min_{s,\mathbf R,\mathbf t}\;
 \sum_{t,j}
 \left\| \mathbf x^{(i)}_{j}(t) - \bigl(s\,\mathbf R\,\mathbf x^{(\mathrm{ref})}_{j}(t)+\mathbf t\bigr) \right\|_{2}^{2}
-\quad \text{s.t.}\quad \mathbf R\in \mathrm{SO}(2).
+\quad \text{s.t.}\ \mathbf R \in \mathrm{SO}(2).
 $$
-
-…text below…
-
 
 **Kinematics.** Centered differences approximate velocities/accelerations:
 
