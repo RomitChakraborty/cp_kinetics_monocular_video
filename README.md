@@ -28,7 +28,17 @@ Skeletons are derived from the above clips with a consistent fps, crop, and dura
 
 Let $\mathbf{x}_j(t)\in\mathbb{R}^2$ be the 2D keypoint for joint $j$ at time $t$. We Procrustes‑align sequences to remove camera pan/zoom:
 
-$$\min_{s,\mathbf R,\mathbf t}\;\sum_{t,j}\left\|\mathbf x^{(i)}_{j}(t)-\bigl(s\,\mathbf R\,\mathbf x^{(\mathrm{ref})}_{j}(t)+\mathbf t\bigr)\right\|_{2}^{2}\quad\text{s.t.}\quad \mathbf R\in\mathrm{SO}(2).$$
+
+
+$$
+\min_{s,\mathbf R,\mathbf t}\;
+\sum_{t,j}
+\left\| \mathbf x^{(i)}_{j}(t) - \bigl(s\,\mathbf R\,\mathbf x^{(\mathrm{ref})}_{j}(t)+\mathbf t\bigr) \right\|_{2}^{2}
+\quad \text{s.t.}\quad \mathbf R\in \mathrm{SO}(2).
+$$
+
+…text below…
+
 
 **Kinematics.** Centered differences approximate velocities/accelerations:
 
