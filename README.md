@@ -1,5 +1,4 @@
-cat > README.md <<'MD'
-# Imran Khan — Batting: Technique & Style (LoRA + Pose)
+# Correlated Kinetics through monocular video: Technique & Style (LoRA + Pose)
 
 A compact research playground to model Imran Khan’s batting style from grainy broadcast footage: we normalize and tile video exemplars, extract skeletal motion, and explore physics‑aware signals that inform fine‑tuning (LoRA) and upscaling.
 
