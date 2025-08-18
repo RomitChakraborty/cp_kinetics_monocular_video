@@ -45,7 +45,7 @@ $$
 v_{\text{tip}}(t)=\left\lVert \dot{\mathbf{b}}(t) \right\rVert_2.
 $$
 
-**Temporal alignment (DTW).** Compare two shots $\{\mathbf{f}_i\} $ and $\{\mathbf{g}_j\}$:
+**Temporal alignment (DTW).** Compare two shots $\{\mathbf{f}_i\}$ and $\{\mathbf{g}_j\}$:
 
 $$
 D(i,j)=\lVert \mathbf{f}_i - \mathbf{g}_j \rVert_2^2 + \min\{D(i-1,j),\,D(i,j-1),\,D(i-1,j-1)\}, \quad D(0,0)=0,
