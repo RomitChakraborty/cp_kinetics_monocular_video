@@ -38,7 +38,7 @@ $$
 
 Optionally smooth with a Savitzky–Golay filter before differentiating.
 
-**Bat head speed & angular velocity.** If $ \mathbf{b}(t) $ is the bat tip proxy and $ \mathbf{h}(t) $ a hand/wrist proxy,
+**Bat head speed & angular velocity.** If $\mathbf{b}(t)$ is the bat tip proxy and $\mathbf{h}(t)$ a hand/wrist proxy,
 
 $$
 \omega_z(t) = \frac{d}{dt}\,\arg\!\big(\mathbf{b}(t)-\mathbf{h}(t)\big),\qquad
