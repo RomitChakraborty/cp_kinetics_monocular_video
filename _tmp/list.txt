@@ -1,0 +1,2 @@
+file '_tmp/clip_0.mp4'
+file '_tmp/black_0.mp4'

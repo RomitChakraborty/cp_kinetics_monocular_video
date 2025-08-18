@@ -1,0 +1,10 @@
+numpy==1.26.4          # avoids NumPy 2.x pin conflicts from some MP builds
+scipy==1.11.4
+matplotlib==3.8.4
+networkx==3.2.1
+scikit-learn==1.4.2
+scikit-image==0.22.0
+opencv-python==4.9.0.80   # avoids recent macOS wheel hiccups
+protobuf==4.25.3          # matches mediapipe >=0.10.18,<0.11 requirement
+mediapipe==0.10.21        # latest; universal2 mac wheels exist
+pyyaml==6.0.1

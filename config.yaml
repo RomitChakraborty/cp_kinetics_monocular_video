@@ -1,0 +1,3 @@
+videos_dir: "."
+outputs_dir: "outputs"
+export_npz: true

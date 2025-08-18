@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# OS cruft
+.DS_Store
+
+# Build scratch
+data/videos_norm/
+data/videos_skeleton_norm/
+docs/assets/
+outputs/_tmp/
+skeleton_videos/_tmp/

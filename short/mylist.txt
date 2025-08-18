@@ -1,0 +1,7 @@
+file '/Users/romitchakraborty/AI/Imran Khan Batting/Videos/Shots/short/imran_khan_cover_drive_norm.mp4'
+file '/Users/romitchakraborty/AI/Imran Khan Batting/Videos/Shots/short/imran_khan_down_the_ground_norm.mp4'
+file '/Users/romitchakraborty/AI/Imran Khan Batting/Videos/Shots/short/imran_khan_hook_1_norm.mp4'
+file '/Users/romitchakraborty/AI/Imran Khan Batting/Videos/Shots/short/imran_khan_hook_2_norm.mp4'
+file '/Users/romitchakraborty/AI/Imran Khan Batting/Videos/Shots/short/imran_khan_inside_edge_norm.mp4'
+file '/Users/romitchakraborty/AI/Imran Khan Batting/Videos/Shots/short/imran_khan_off_drive_50_norm.mp4'
+file '/Users/romitchakraborty/AI/Imran Khan Batting/Videos/Shots/short/imran_khan_square_drive_norm.mp4'
