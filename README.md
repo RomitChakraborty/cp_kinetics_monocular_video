@@ -53,7 +53,9 @@ $$
 
 yielding the correlation paths (`*_corrpath.png`).
 
-**LoRA for catching batter's technique ** With base weights $\mathbf{W}$ and LoRA rank $r$,
+**LoRA for catching batter's technique ** 
+
+With base weights $\mathbf{W}$ and LoRA rank $r$,
 $$
 \mathbf{W}'=\mathbf{W}+\Delta\mathbf{W},\quad \Delta\mathbf{W}=\alpha\,\frac{1}{r}\,\mathbf{A}\mathbf{B},
 $$
@@ -67,7 +69,7 @@ with conditioning \( \mathbf{c} \) from text/pose.
 
 ---
 
-## 🧪 Reproducibility
+## Reproducibility
 
 Build the composites shown above:
 ```bash
