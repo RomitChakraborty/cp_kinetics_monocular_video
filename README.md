@@ -20,14 +20,7 @@ Skeletons are derived from the above clips with a consistent fps, crop, and dura
 
 **Pose & alignment.** 
 
-Let $\mathbf{x}_j(t)\in\mathbb{R}^2$ be the 2D keypoint for joint $j$ at time $t$. We Procrustes‑align sequences to remove camera pan/zoom:
-
-$$
-\min_{s,\mathbf R,\mathbf t}\;
-\sum_{t,j}
-\left\| \mathbf x^{(i)}_{j}(t) - \bigl(s\,\mathbf R\,\mathbf x^{(\mathrm{ref})}_{j}(t)+\mathbf t\bigr) \right\|_{2}^{2}
-\quad \text{s.t.}\ \mathbf R \in \mathrm{SO}(2).
-$$
+Let $\mathbf{x}_j(t)\in\mathbb{R}^2$ be the 2D keypoint for joint $j$ at time $t$. We Procrustes‑align sequences to remove camera pan/zoom.
 
 **Kinematics.** Centered differences approximate velocities/accelerations:
 
@@ -53,21 +46,6 @@ $$
 
 yielding the correlation paths (`*_corrpath.png`).
 
-**LoRA for catching batter's technique ** 
-
-With base weights $\mathbf{W}$ and LoRA rank $r$,
-$$
-\mathbf{W}'=\mathbf{W}+\Delta\mathbf{W},\quad \Delta\mathbf{W}=\alpha\,\frac{1}{r}\,\mathbf{A}\mathbf{B},
-$$
-trained via the denoising loss
-$$
-\mathcal{L} = \mathbb{E}_{\mathbf{x},\epsilon,t}\Big[
-\big\lVert \epsilon - \epsilon_\theta(\sqrt{\bar{\alpha}_t}\mathbf{x} + \sqrt{1-\bar{\alpha}_t}\epsilon, t, \mathbf{c}) \big\rVert_2^2
-\Big],
-$$
-with conditioning \( \mathbf{c} \) from text/pose.
-
----
 
 ## Reproducibility
 
