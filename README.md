@@ -1,13 +1,13 @@
-# Correlated Kinetics through monocular video: Technique & Style (LoRA + Pose)
+# Correlated Kinetics from Monocular Video: 
 
-A compact research playground to model Imran Khan’s batting style from grainy broadcast footage: we normalize and tile video exemplars, extract skeletal motion, and explore physics‑aware signals that inform fine‑tuning (LoRA) and upscaling.
+This repo implements a correlation–path analysis of batting kinetics from short monocular video. From each clip we detect 2D keypoints and a bat tip, root‑center and scale‑normalize, smooth and differentiate, estimate a single in‑plane swing axis, and compute time‑lagged correlations among segments. We then extract a single directed chain—the maximum‑weight correlation path—that summarizes how motion flows from the lower body to the bat. The representation is intentionally minimal (one swing axis, one timeline, one chain), grounded in the physics of proximal‑to‑distal sequencing and designed for legibility via economy, directionality, and salience.
 
 ---
 
-## 🎬 Six canonical shots (2×3, synchronized)
+## Six canonical shots (2×3, synchronized)
 [![Six shots composite](docs/assets/ik_shots_2x3.gif)](docs/assets/ik_shots_2x3.mp4)
 
-## 🦴 Corresponding skeletons (2×3, synchronized)
+## Corresponding skeletons (2×3, synchronized)
 [![Six skeletons composite](docs/assets/ik_skeletons_2x3.gif)](docs/assets/ik_skeletons_2x3.mp4)
 
 
@@ -17,7 +17,7 @@ Shots (left→right, top→bottom): cover drive, down the ground, hook 2, insid
 
 ---
 
-## 🦴 Corresponding skeletons (2×3, synchronized)
+## Corresponding skeletons (2×3, synchronized)
 
 [![Six skeletons composite](docs/assets/ik_skeletons_2x3.gif)](docs/assets/ik_skeletons_2x3.mp4)
 
