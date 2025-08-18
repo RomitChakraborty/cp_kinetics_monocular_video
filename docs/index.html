@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Imran Khan — Six Shots (Sync Demo)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    video { width: 100%; border: 1px solid #ddd; border-radius: 6px; }
+    .row { margin: 12px 0; }
+    button { padding: 8px 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Imran Khan — Six Shots (Sync Demo)</h1>
+  <div class="row">
+    <button id="play">Play All</button>
+    <button id="pause">Pause All</button>
+    <button id="mute">Mute All</button>
+    <button id="unmute">Unmute All</button>
+    <select id="which">
+      <option value="orig">Originals</option>
+      <option value="skel">Skeletons</option>
+    </select>
+  </div>
+
+  <div id="grid" class="grid"></div>
+
+  <script>
+    const SHOTS = [
+      "imran_khan_cover_drive",
+      "imran_khan_down_the_ground",
+      "imran_khan_hook_2",
+      "imran_khan_inside_edge",
+      "imran_khan_off_drive_50",
+      "imran_khan_square_drive",
+    ];
+    const PATHS = {
+      orig: (b) => `../data/videos_norm/${b}_norm_480x270_30fps.mp4`,
+      skel: (b) => `../data/videos_skeleton_norm/${b}_skel_norm_480x270_30fps.mp4`
+    };
+
+    const grid = document.getElementById('grid');
+    const which = document.getElementById('which');
+
+    function load(kind) {
+      grid.innerHTML = '';
+      SHOTS.forEach(b => {
+        const v = document.createElement('video');
+        v.src = PATHS[kind](b);
+        v.setAttribute('playsinline','');
+        v.setAttribute('muted','');
+        v.controls = true;
+        grid.appendChild(v);
+      });
+    }
+
+    function vids() { return Array.from(grid.querySelectorAll('video')); }
+
+    document.getElementById('play').onclick = async () => {
+      const all = vids();
+      all.forEach(v => { v.currentTime = 0; v.muted = true; });
+      await Promise.all(all.map(v => v.play()));
+    };
+    document.getElementById('pause').onclick = () => vids().forEach(v => v.pause());
+    document.getElementById('mute').onclick  = () => vids().forEach(v => v.muted = true);
+    document.getElementById('unmute').onclick= () => vids().forEach(v => v.muted = false);
+    which.onchange = () => load(which.value);
+
+    load('orig');
+  </script>
+</body>
+</html>

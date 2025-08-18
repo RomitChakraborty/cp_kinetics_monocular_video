@@ -15,3 +15,8 @@ data/videos_skeleton_norm/
 docs/assets/
 outputs/_tmp/
 skeleton_videos/_tmp/
+# Media hygiene
+*.mp4
+!docs/assets/*.mp4
+!data/videos_norm/*.mp4
+!data/videos_skeleton_norm/*.mp4
