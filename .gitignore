@@ -20,3 +20,9 @@ skeleton_videos/_tmp/
 !docs/assets/*.mp4
 !data/videos_norm/*.mp4
 !data/videos_skeleton_norm/*.mp4
+_tmp/
+list*.txt
+*.mkv
+
+#editor junk
+*~
