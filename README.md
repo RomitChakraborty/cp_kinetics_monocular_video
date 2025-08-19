@@ -4,6 +4,11 @@ This repo implements a correlation–path analysis of batting kinetics from shor
 
 ---
 
+# Installations/dependancies
+
+Note ffmpeg is required.
+Optionally, Python 3.8+ for montage.py.
+
 ## Six canonical shots (2×2, synchronized)
 [![Six shots composite](docs/assets/ik_shots_2x3.gif)](docs/assets/ik_shots_2x3.mp4)
 
@@ -46,9 +51,19 @@ $$
 
 yielding the correlation paths (`*_corrpath.png`).
 
+## Montage tools
 
-## Reproducibility
+This repo now includes simple Bash and Python tools to concatenate batting clips.
 
-Build the composites shown above:
-```bash
-./scripts/build_composites.sh
+- `scripts/montage.sh`  
+  Bash wrapper around ffmpeg. Supports:
+    * linear concatenation from a list file (`-l _tmp/list.txt`)
+    * optional normalization (`--normalize 480x270@30`)
+    * optional labels (`--label "Cover Drive"`)
+    * auto-fallback from `-c copy` to re-encode
+
+- `scripts/montage.py`  
+  Python wrapper with additional options:
+    * all features from `montage.sh`
+    * optional crossfade transitions (`--xfade 0.5`)
+
