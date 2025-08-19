@@ -139,6 +139,7 @@ def render_from_npz(npz_path, out_path, mode='normalized', fps=30, trail=25, bg=
 
 def main():
     ap = argparse.ArgumentParser()
+
     ap.add_argument("--npz", help="path to one *_series.npz")
     ap.add_argument("--glob", help="glob for multiple npz files (e.g., 'outputs/*_series.npz')")
     ap.add_argument("--out", help="output mp4 path (single)")
